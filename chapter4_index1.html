@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Practice</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="/assets/js/chapter4JS.js" defer></script>
+  </head>
+
+  <body>
+    <h1 id="main-title">DOM Manipulation</h1>
+
+    <form id="form-example">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <button id="open-modal-btn">Open Modal</button>
+
+    <a href="https://www.w3schools.com" target="_blank" id="open-modal-btn3"
+      >Visit W3Schools.com!</a
+    >
+
+    <div id="content-area"></div>
+
+    <textarea id="text-area" rows="4" cols="50">Type some text...</textarea>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close close-modal-cross">&times;</span>
+        <p>Some text in the Modal..</p>
+        <button class="close" id="close-modal-btn">Close Modal</button>
+      </div>
+    </div>
+
+    <article
+      id="electric-cars"
+      data-columns="3"
+      data-index-number="12314"
+      data-parent="cars"
+    >
+      …
+    </article>
+  </body>
+</html>
