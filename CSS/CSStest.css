@@ -1,0 +1,42 @@
+:root {
+    --clr-primary: #188159;
+    --clr-secondary-400: #333;
+    --clr-bg: #1d8e92;
+
+    --ff-primary: "Open Sans", sans-serif;
+    --ff-secondary: "Doto", sans-serif;
+}
+
+html {
+    font-size: 14px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    background-color: var(--clr-bg);
+}
+
+.raceTitle {
+    font-family: var(--ff-primary);
+    font-size: 2rem;
+}
