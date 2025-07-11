@@ -1,3 +1,6 @@
+// recursive approach 90% on point, but has 1 bug - it breaks at examples such as [[]] - basically nested same type parentheses are not solved correctly because we use .indexOf which only 
+// handles the first closed paranthesis and doesn't properly closes the pair it belongs.
+
 let s = "()[]{}",
     s2 = "([])[]]{}{]}",
     s3 = "([([{()}{}})["
@@ -52,9 +55,9 @@ function invalidParenthesis(string) {
 
 console.log(invalidParenthesis(s))  // good example
 console.log(invalidParenthesis(s2))  // bad example due to '[]]{}{]}'
-console.log(invalidParenthesis(s3))  // 
-console.log(invalidParenthesis(s4))  // 
-// console.log(invalidParenthesis("{([])}[]()[[())]]"))  // bad example due to '[[]]'
+console.log(invalidParenthesis(s3))   
+console.log(invalidParenthesis(s4))   
+console.log(invalidParenthesis("{([])}[]()[[())]]"))  // bad example due to '[[]]'
  
     
 // Some sort of attempt. Maybe will try doing this way too.
