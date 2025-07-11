@@ -1,6 +1,7 @@
 let s = "()[]{}",
     s2 = "([])[]]{}{]}",
     s3 = "([([{()}{}})["
+    s4 = "([{}]){[]}(){[[]]}"
 
 function invalidParenthesis(string) {
     let correctParenthesis = {
@@ -52,6 +53,7 @@ function invalidParenthesis(string) {
 console.log(invalidParenthesis(s))  // good example
 console.log(invalidParenthesis(s2))  // bad example due to '[]]{}{]}'
 console.log(invalidParenthesis(s3))  // 
+console.log(invalidParenthesis(s4))  // 
 // console.log(invalidParenthesis("{([])}[]()[[())]]"))  // bad example due to '[[]]'
  
     
